@@ -17,18 +17,7 @@ public class FizzBuzz {
     }
 
     public static void displayFizzBuzzFromOneToOneHundredUsingSwitch() {
-//        Logger log = LoggerFactory.getLogger(FizzBuzz.class);
-//        log.info("switch is used");
-//
-//        for(int i = 1; i < 101; i++){
-//            int number = (i % 3 == 0 && i % 5 == 0) ? 0 :
-//            switch(number) {
-//                case (0) -> log.info("FizzBuzz");
-//                case (1) -> log.info("Fizz");
-//                case (2) -> log.info("Buzz");
-//                default -> log.info(String.valueOf(i));
-//            }
-//        }
+        //TODO
     }
 
 
