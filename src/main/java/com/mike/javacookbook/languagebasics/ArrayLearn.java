@@ -1,7 +1,5 @@
 package com.mike.javacookbook.languagebasics;
 
-import java.util.Arrays;
-
 public class ArrayLearn {
 
     public static void swap(int[] tab, int i, int j) {
@@ -9,9 +7,7 @@ public class ArrayLearn {
             throw new NullPointerException("tab must not be null");
         }
         if (i < 0 || j < 0) {
-            //TODO
             throw new IndexOutOfBoundsException("array indexes should be >= 0, but got i = /{i}, j = /{j}");
-//            throw new IndexOutOfBoundsException("array indexes should be >= 0, but got i = %d, j = %d".formatted(i, j));
         }
         if (i > tab.length - 1 || j > tab.length - 1) {
             throw new IndexOutOfBoundsException("array indexes should be smaller than array's length");
@@ -24,13 +20,11 @@ public class ArrayLearn {
 //    TODO Javadoc z opisem kontraktu - co rzuca i kiedy
 //    Objects.checkIndex ?
 //    Objects.requireNonNull(tab, "tab must not be null")
-//    checked vs unchecked - IndexOutOfBoundsException unchecked, why?
 
     public static void swapInteger(Integer i, Integer j) {
         Integer temp = i;
         i = j;
         j = temp;
-        //TODO debug
     }
 
     public static void reverse(int[] tab) {
@@ -44,7 +38,6 @@ public class ArrayLearn {
             tab[j - i] = temp;
         }
 //        TODO złożoność czasowa tego,ile iteracji dla n elementów i ile dodatkowej pamięci?
-//        co jak usunę walidację z null pointer, wyjdzie na to samo?
     }
 
     public static int findSecondLargest(int[] tab) {
@@ -59,8 +52,5 @@ public class ArrayLearn {
             }
         }
         return second;
-
     }
-
-
 }
